@@ -1,0 +1,21 @@
+{
+  "name": "lcd_display",
+  "version": "1.0.0",
+  "description": "Simulation de l'affichage de chiffre sur un écran LCD",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Augustin Bonnet",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.27",
+    "node": "^14.7.0",
+    "process": "^0.11.10",
+    "prompt": "^1.0.0",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
