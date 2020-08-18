@@ -1,7 +1,6 @@
 import { DisplayableDigit } from "../models/DisplayableDigit";
 import { ShowDigit } from "../vues/ShowDigit";
-import {Digit} from "../models/digit";
-import * as readline from 'readline';
+import * as readline from "readline";
 
 //Init of input entry
 let rl = readline.createInterface({
@@ -33,7 +32,7 @@ export default function main(){
     const recursiveAsyncReadline = function () {
         rl.question("What number would you like to display ? Press \'quit\' if you want to exit the program\n\t", (answer) => {
             let number = parseInt(answer, 10);
-            if (answer === 'quit') {
+            if (answer === "quit") {
                 return rl.close();
             } else {
                 if (isNaN(number)) { // Wrong entry
@@ -44,7 +43,7 @@ export default function main(){
                     for (let i = 0; i < answer.length; i++) {
                         let figure = parseInt(answer.charAt(i));
                         //Creation of a digit object according to its figure value
-                        digitArray.push(new Digit(figure, DD.digits[figure].grid))
+                        digitArray.push(DD.digits[figure]);
                     }
                     //Print the array
                     SD.ShowAllDigits(digitArray);
